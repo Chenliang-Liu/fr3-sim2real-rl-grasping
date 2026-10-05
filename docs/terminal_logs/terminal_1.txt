@@ -1,0 +1,41 @@
+HISTORICAL EXPERIMENT RECORD — identifiers replaced with placeholders.
+Commands and outputs describe the original setup; use docs/sim2real.md for deployment.
+Any physical-execution flags in this record are historical, not an instruction to run them.
+
+researcher@robot-workstation:~/franka_ros2_ws/src/my_controller$ ros2 launch realsense2_camera rs_launch.py   serial_no:=_CAMERA_SERIAL   enable_color:=true   enable_depth:=false   align_depth.enable:=false   rgb_camera.color_profile:=1280x720x30   initial_reset:=true
+[INFO] [launch]: All log files can be found below /home/RESEARCHER/.ros/log/2026-05-18-20-52-47-196448-robot-workstation-2029126
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [launch.user]: 🚀 Launching as Normal ROS Node
+[INFO] [realsense2_camera_node-1]: process started with pid [2029135]
+[realsense2_camera_node-1] [INFO] [1779108767.265933083] [camera.camera]: RealSense ROS v4.57.7
+[realsense2_camera_node-1] [INFO] [1779108767.265999310] [camera.camera]: Built with LibRealSense v2.57.7
+[realsense2_camera_node-1] [INFO] [1779108767.266008207] [camera.camera]: Running with LibRealSense v2.57.7
+[realsense2_camera_node-1] [INFO] [1779108767.296287791] [camera.camera]: Device with serial number CAMERA_SERIAL was found.
+[realsense2_camera_node-1] 
+[realsense2_camera_node-1] [INFO] [1779108767.296324561] [camera.camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:08.1/0000:74:00.4/usb6/6-2/6-2.2/6-2.2:1.0/video4linux/video0 was found.
+[realsense2_camera_node-1] [INFO] [1779108767.296334120] [camera.camera]: Device with name Intel RealSense D455 was found.
+[realsense2_camera_node-1] [INFO] [1779108767.296475702] [camera.camera]: Device with port number 6-2.2 was found.
+[realsense2_camera_node-1] [INFO] [1779108767.296484078] [camera.camera]: Device USB type: 3.2
+[realsense2_camera_node-1] [INFO] [1779108767.296491091] [camera.camera]: Resetting device...
+[realsense2_camera_node-1] [INFO] [1779108773.306046998] [camera.camera]: Device with serial number CAMERA_SERIAL was found.
+[realsense2_camera_node-1] 
+[realsense2_camera_node-1] [INFO] [1779108773.306109177] [camera.camera]: Device with physical ID /sys/devices/pci0000:00/0000:00:08.1/0000:74:00.4/usb6/6-2/6-2.2/6-2.2:1.0/video4linux/video0 was found.
+[realsense2_camera_node-1] [INFO] [1779108773.306115038] [camera.camera]: Device with name Intel RealSense D455 was found.
+[realsense2_camera_node-1] [INFO] [1779108773.306197527] [camera.camera]: Device with port number 6-2.2 was found.
+[realsense2_camera_node-1] [INFO] [1779108773.306203148] [camera.camera]: Device USB type: 3.2
+[realsense2_camera_node-1] [INFO] [1779108773.306233025] [camera.camera]: getParameters...
+[realsense2_camera_node-1] [INFO] [1779108773.306372874] [camera.camera]: JSON file is not provided
+[realsense2_camera_node-1] [INFO] [1779108773.306377963] [camera.camera]: Device Name: Intel RealSense D455
+[realsense2_camera_node-1] [INFO] [1779108773.306381911] [camera.camera]: Device Serial No: CAMERA_SERIAL
+[realsense2_camera_node-1] [INFO] [1779108773.306385748] [camera.camera]: Device physical port: /sys/devices/pci0000:00/0000:00:08.1/0000:74:00.4/usb6/6-2/6-2.2/6-2.2:1.0/video4linux/video0
+[realsense2_camera_node-1] [INFO] [1779108773.306389656] [camera.camera]: Device FW version: 5.13.0.55
+[realsense2_camera_node-1] [INFO] [1779108773.306393463] [camera.camera]: Device Product ID: 0x0B5C
+[realsense2_camera_node-1] [INFO] [1779108773.306396920] [camera.camera]: Sync Mode: Off
+[realsense2_camera_node-1] [INFO] [1779108773.427832270] [camera.camera]: Set ROS param depth_module.depth_profile to default: 848x480x30
+[realsense2_camera_node-1] [INFO] [1779108773.428007567] [camera.camera]: Set ROS param depth_module.infra_profile to default: 848x480x30
+[realsense2_camera_node-1] [INFO] [1779108773.430427456] [camera.camera]: Set ROS param gyro_fps to default: 200
+[realsense2_camera_node-1] [INFO] [1779108773.430451282] [camera.camera]: Set ROS param accel_fps to default: 100
+[realsense2_camera_node-1] [INFO] [1779108773.431270756] [camera.camera]: Stopping Sensor: RGB Camera
+[realsense2_camera_node-1] [INFO] [1779108773.436773609] [camera.camera]: Starting Sensor: RGB Camera
+[realsense2_camera_node-1] [INFO] [1779108773.438449098] [camera.camera]: Open profile: stream_type: Color(0), Format: RGB8, Width: 1280, Height: 720, FPS: 30
+[realsense2_camera_node-1] [INFO] [1779108773.440057519] [camera.camera]: RealSense Node Is Up!

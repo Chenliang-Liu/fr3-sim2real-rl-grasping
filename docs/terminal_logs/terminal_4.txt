@@ -1,0 +1,19 @@
+HISTORICAL EXPERIMENT RECORD — identifiers replaced with placeholders.
+Commands and outputs describe the original setup; use docs/sim2real.md for deployment.
+Any physical-execution flags in this record are historical, not an instruction to run them.
+
+researcher@robot-workstation:~/franka_ros2_ws/src/my_controller$ ros2 run tf2_ros static_transform_publisher \
+  --x 0.7075392694747895 \
+  --y 0.11604827694418951 \
+  --z 0.5923779720979521 \
+  --qx -0.6614448650345416 \
+  --qy -0.6716968126123597 \
+  --qz 0.2179308643790493 \
+  --qw 0.252626643085868 \
+  --frame-id fr3_link0 \
+  --child-frame-id camera_calib_optical_frame
+2026-05-18 21:14:40.924 [RTPS_TRANSPORT_SHM Error] Failed init_port fastrtps_port7427: open_and_lock_file failed -> Function open_port_internal
+[INFO] [1779110080.930095343] [static_transform_publisher_zHXo4sThzeNlBqAV]: Spinning until stopped - publishing transform
+translation: ('0.707539', '0.116048', '0.592378')
+rotation: ('-0.661445', '-0.671697', '0.217931', '0.252627')
+from 'fr3_link0' to 'camera_calib_optical_frame'

@@ -1,0 +1,5 @@
+HISTORICAL EXPERIMENT RECORD — identifiers replaced with placeholders.
+Commands and outputs describe the original setup; use docs/sim2real.md for deployment.
+Any physical-execution flags in this record are historical, not an instruction to run them.
+
+researcher@robot-workstation:~/franka_ros2_ws$ rqt

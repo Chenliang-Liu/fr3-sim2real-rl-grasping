@@ -1,0 +1,15 @@
+HISTORICAL EXPERIMENT RECORD — identifiers replaced with placeholders.
+Commands and outputs describe the original setup; use docs/sim2real.md for deployment.
+Any physical-execution flags in this record are historical, not an instruction to run them.
+
+researcher@robot-workstation:~/franka_ros2_ws/src/my_controller$ python3 aruco_cube_pose_node.py
+[INFO] [1779144258.547462512] [aruco_cube_pose_node]: Aruco cube pose node started.
+[INFO] [1779144258.547621844] [aruco_cube_pose_node]: Subscribing image: /camera/camera/color/image_raw
+[INFO] [1779144258.547723888] [aruco_cube_pose_node]: Subscribing camera_info: /camera/camera/color/camera_info
+[INFO] [1779144258.547820541] [aruco_cube_pose_node]: Publishing pose: /cube_pose_in_camera
+[INFO] [1779144259.605146225] [aruco_cube_pose_node]: cube in camera_calib_optical_frame: p=(-0.086, 0.078, 0.537), q=(0.890, 0.012, 0.213, -0.404)
+[INFO] [1779144260.738614910] [aruco_cube_pose_node]: cube in camera_calib_optical_frame: p=(-0.086, 0.078, 0.538), q=(0.893, 0.002, 0.212, -0.398)
+[INFO] [1779144261.806366051] [aruco_cube_pose_node]: cube in camera_calib_optical_frame: p=(-0.086, 0.078, 0.538), q=(0.893, 0.002, 0.212, -0.398)
+[INFO] [1779144263.541040200] [aruco_cube_pose_node]: cube in camera_calib_optical_frame: p=(-0.086, 0.077, 0.532), q=(0.891, -0.004, 0.205, -0.406)
+[INFO] [1779144264.575790467] [aruco_cube_pose_node]: cube in camera_calib_optical_frame: p=(-0.086, 0.077, 0.534), q=(0.890, 0.009, 0.208, -0.406)
+[INFO] [1779144265.577638292] [aruco_cube_pose_node]: cube in camera_calib_optical_frame: p=(-0.086, 0.077, 0.534), q=(0.894, -0.001, 0.204, -0.400)

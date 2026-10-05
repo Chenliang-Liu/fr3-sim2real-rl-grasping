@@ -1,0 +1,26 @@
+HISTORICAL EXPERIMENT RECORD — identifiers replaced with placeholders.
+Commands and outputs describe the original setup; use docs/sim2real.md for deployment.
+Any physical-execution flags in this record are historical, not an instruction to run them.
+
+researcher@robot-workstation:~/franka_ros2_ws$ ros2 run tf2_ros tf2_echo fr3_link0 cube
+[INFO] [1779144464.012846931] [tf2_echo]: Waiting for transform fr3_link0 ->  cube: Invalid frame ID "fr3_link0" passed to canTransform argument target_frame - frame does not exist
+At time 1779144464.866347412
+- Translation: [0.436, 0.056, 0.130]
+- Rotation: in Quaternion (xyzw) [0.366, 0.601, 0.563, 0.433]
+- Rotation: in RPY (radian) [1.562, 0.109, 1.938]
+- Rotation: in RPY (degree) [89.499, 6.265, 111.055]
+- Matrix:
+ -0.357 -0.047  0.933  0.436
+  0.928  0.099  0.360  0.056
+ -0.109  0.994  0.009  0.130
+  0.000  0.000  0.000  1.000
+At time 1779144465.799512451
+- Translation: [0.428, 0.054, 0.118]
+- Rotation: in Quaternion (xyzw) [0.339, 0.606, 0.565, 0.446]
+- Rotation: in RPY (radian) [1.534, 0.158, 1.957]
+- Rotation: in RPY (degree) [87.884, 9.058, 112.116]
+- Matrix:
+ -0.372 -0.093  0.924  0.428
+  0.915  0.132  0.382  0.054
+ -0.157  0.987  0.036  0.118
+  0.000  0.000  0.000  1.000
