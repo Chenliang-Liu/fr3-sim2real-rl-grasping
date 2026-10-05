@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1290" viewBox="0 0 900 1290" role="img" aria-labelledby="title description">
+<title id="title">Real FR3 perception, coordinate frames, and policy input</title>
+<desc id="description">RealSense color images and camera intrinsics feed ArUco detection and solvePnP, producing a marker pose in the camera optical frame. The recorded node uses a zero marker-to-cube offset, so the frame named cube is at the marker origin. A separately measured static camera-to-robot calibration and this object transform are composed by TF2 into an object pose in the robot base frame. Robot TCP position and a synthetic gripper-open value complete a 14-value observation. A saved SAC policy outputs three approach actions and a gripper request. Approach actions are scaled, filtered, and bounded. The gripper action and relative object position gate closing, followed by a preset vertical lift. The grasp flag does not verify object capture.</desc>
+<defs>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L8 5 L1 9" fill="none" stroke="#64748b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></marker>
+  <marker id="calibration-arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L8 5 L1 9" fill="none" stroke="#936d22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></marker>
+  <marker id="state-arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L8 5 L1 9" fill="none" stroke="#147d69" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></marker>
+</defs>
+<rect width="900" height="1290" fill="#ffffff"/>
+<g font-family="Segoe UI, Arial, sans-serif">
+  <text x="32" y="45" font-size="26" fill="#172b4d" font-weight="700">FROM CAMERA IMAGES TO ROBOT ACTIONS</text>
+  <text x="32" y="78" font-size="18" fill="#344054">Runtime marker detection and measured camera calibration are separate inputs.</text>
+
+  <rect x="32" y="112" width="400" height="98" rx="18" fill="#f5f9ff" stroke="#2463a8" stroke-width="1.7"/>
+  <text x="54" y="146" font-size="22" fill="#172b4d" font-weight="700">RealSense RGB camera</text>
+  <text x="54" y="174" font-size="18" fill="#344054">Color image + CameraInfo intrinsics</text>
+  <text x="54" y="196" font-size="16" fill="#526072">Depth is not used for this pose estimate.</text>
+
+  <rect x="492" y="112" width="376" height="192" rx="18" fill="#fcf9f2" stroke="#936d22" stroke-width="1.7"/>
+  <text x="514" y="146" font-size="22" fill="#172b4d" font-weight="700">Measured camera calibration</text>
+  <text x="514" y="178" font-size="18" fill="#344054">Fixed camera pose in the robot base</text>
+  <text x="514" y="206" font-size="16" fill="#344054">fr3_link0 → camera_calib_optical_frame</text>
+  <text x="514" y="241" font-size="18" fill="#805e1d" font-weight="600">Supplied as a static TF</text>
+  <text x="514" y="270" font-size="17" fill="#526072">ArUco does not estimate this transform.</text>
+
+  <path d="M232 213 V235" fill="none" stroke="#64748b" stroke-width="2.2" marker-end="url(#arrow)"/>
+  <rect x="32" y="242" width="400" height="138" rx="18" fill="#f5f9ff" stroke="#2463a8" stroke-width="1.7"/>
+  <text x="54" y="278" font-size="22" fill="#172b4d" font-weight="700">ArUco marker pose</text>
+  <text x="54" y="311" font-size="18" fill="#344054">Marker corners + known 40 mm side</text>
+  <text x="54" y="338" font-size="17" fill="#344054">solvePnP estimates rotation + translation</text>
+  <text x="54" y="363" font-size="18" fill="#344054">Coordinates are in the camera frame.</text>
+
+  <path d="M232 383 V415" fill="none" stroke="#64748b" stroke-width="2.2" marker-end="url(#arrow)"/>
+  <rect x="32" y="422" width="400" height="126" rx="18" fill="#f3faf7" stroke="#147d69" stroke-width="1.7"/>
+  <text x="54" y="456" font-size="21" fill="#172b4d" font-weight="700">Publish object TF, named “cube”</text>
+  <text x="54" y="485" font-size="16" fill="#344054">camera_calib_optical_frame → cube</text>
+  <text x="54" y="514" font-size="17" fill="#147d69" font-weight="600">Zero offset: position is the marker origin.</text>
+  <text x="54" y="536" font-size="17" fill="#526072">The code does not shift to the cube center.</text>
+
+  <path d="M232 551 V568 H352 V579" fill="none" stroke="#64748b" stroke-width="2.2" marker-end="url(#arrow)"/>
+  <path d="M680 307 V568 H548 V579" fill="none" stroke="#936d22" stroke-width="2.2" stroke-dasharray="6 5" marker-end="url(#calibration-arrow)"/>
+  <text x="696" y="440" font-size="17" fill="#805e1d" font-weight="600">Static calibration</text>
+
+  <rect x="242" y="586" width="416" height="108" rx="18" fill="#f3faf7" stroke="#147d69" stroke-width="1.7"/>
+  <text x="450" y="620" font-size="22" fill="#172b4d" font-weight="700" text-anchor="middle">TF2 composes the frames</text>
+  <text x="450" y="650" font-size="18" fill="#344054" text-anchor="middle">Read the object pose in fr3_link0</text>
+  <text x="450" y="676" font-size="18" fill="#344054" text-anchor="middle">Position (3) + quaternion (4)</text>
+
+  <path d="M450 697 V729" fill="none" stroke="#64748b" stroke-width="2.2" marker-end="url(#arrow)"/>
+  <rect x="32" y="736" width="218" height="120" rx="18" fill="#f3faf7" stroke="#147d69" stroke-width="1.7"/>
+  <text x="52" y="772" font-size="21" fill="#172b4d" font-weight="700">Robot TCP pose</text>
+  <text x="52" y="801" font-size="16" fill="#344054">fr3_link0 →</text>
+  <text x="52" y="823" font-size="16" fill="#344054">fr3_hand_tcp</text>
+  <text x="52" y="846" font-size="16" fill="#526072">Position from robot TF</text>
+  <path d="M253 790 H283" fill="none" stroke="#64748b" stroke-width="2.2" marker-end="url(#arrow)"/>
+
+  <rect x="290" y="736" width="320" height="156" rx="18" fill="#f3faf7" stroke="#147d69" stroke-width="1.7"/>
+  <text x="450" y="772" font-size="22" fill="#172b4d" font-weight="700" text-anchor="middle">Build 14-value input</text>
+  <text x="450" y="810" font-size="17" fill="#344054" text-anchor="middle">TCP position (3) + opening (1)</text>
+  <text x="450" y="838" font-size="16" fill="#344054" text-anchor="middle">Object position (3) + quaternion (4)</text>
+  <text x="450" y="866" font-size="17" fill="#344054" text-anchor="middle">Object − TCP position (3)</text>
+
+  <rect x="650" y="736" width="218" height="132" rx="18" fill="#f8fafc" stroke="#64748b" stroke-width="1.7"/>
+  <text x="670" y="772" font-size="21" fill="#172b4d" font-weight="700">Gripper opening</text>
+  <text x="670" y="801" font-size="16" fill="#344054">Configured open value;</text>
+  <text x="670" y="823" font-size="16" fill="#344054">0.0 after the grasp flag</text>
+  <text x="670" y="849" font-size="16" fill="#526072">Synthetic, not measured</text>
+  <path d="M647 790 H617" fill="none" stroke="#64748b" stroke-width="2.2" marker-end="url(#arrow)"/>
+
+  <path d="M450 895 V929" fill="none" stroke="#64748b" stroke-width="2.2" marker-end="url(#arrow)"/>
+  <rect x="290" y="936" width="320" height="112" rx="18" fill="#f5f9ff" stroke="#2463a8" stroke-width="1.7"/>
+  <text x="450" y="972" font-size="22" fill="#172b4d" font-weight="700" text-anchor="middle">Saved SAC policy</text>
+  <text x="450" y="1002" font-size="18" fill="#344054" text-anchor="middle">Deterministic inference</text>
+  <text x="450" y="1029" font-size="16" fill="#344054" text-anchor="middle">Outputs: x, y, z + gripper request</text>
+
+  <path d="M450 1051 V1078 H232 V1103" fill="none" stroke="#64748b" stroke-width="2.2" marker-end="url(#arrow)"/>
+  <path d="M450 1078 H674 V1103" fill="none" stroke="#64748b" stroke-width="2.2" marker-end="url(#arrow)"/>
+  <path d="M613 854 H628 V900 H884 V1088 H748 V1103" fill="none" stroke="#147d69" stroke-width="2.1" stroke-dasharray="6 5" marker-end="url(#state-arrow)"/>
+  <text x="643" y="923" font-size="16" fill="#147d69" font-weight="600">Relative object position</text>
+
+  <rect x="32" y="1110" width="400" height="112" rx="18" fill="#f5f9ff" stroke="#2463a8" stroke-width="1.7"/>
+  <text x="54" y="1146" font-size="22" fill="#172b4d" font-weight="700">Learned approach motion</text>
+  <text x="54" y="1178" font-size="18" fill="#344054">Scale, filter, and limit position increments</text>
+  <text x="54" y="1206" font-size="18" fill="#344054">MoveIt + FR3 controller move the arm</text>
+
+  <rect x="480" y="1110" width="388" height="112" rx="18" fill="#f3faf7" stroke="#147d69" stroke-width="1.7"/>
+  <text x="502" y="1146" font-size="22" fill="#172b4d" font-weight="700">Gated close + preset lift</text>
+  <text x="502" y="1178" font-size="18" fill="#344054">Gripper action + proximity trigger closing</text>
+  <text x="502" y="1206" font-size="18" fill="#344054">A separate routine lifts vertically</text>
+
+  <text x="450" y="1254" font-size="17" fill="#344054" text-anchor="middle">The grasp flag does not confirm capture. Runner motion requires --execute.</text>
+</g>
+</svg>

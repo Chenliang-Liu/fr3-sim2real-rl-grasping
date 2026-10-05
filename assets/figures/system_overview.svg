@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1110" viewBox="0 0 1080 1110" role="img" aria-labelledby="title description">
+<title id="title">Simulation training and real FR3 deployment workflow</title>
+<desc id="description">Two columns with eight named steps: build the simulated task, define input, train SAC, evaluate and save; locate the real cube, build the real input, run the saved policy, execute grasp and lift. Dashed links connect the shared input layout and saved policy transfer.</desc>
+<defs>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M1 1 L8 5 L1 9" fill="none" stroke="#64748b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></marker>
+  <marker id="transfer-arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L8 5 L1 9" fill="none" stroke="#936d22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></marker>
+</defs>
+<rect width="1080" height="1110" fill="#ffffff"/>
+<g font-family="Segoe UI, Arial, sans-serif">
+<rect x="165" y="24" width="750" height="96" rx="20" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="540" y="63" font-size="24" fill="#172b4d" font-weight="700" text-anchor="middle">TASK: GRASP A CUBE, LIFT IT, KEEP IT STEADY</text>
+<text x="540" y="94" font-size="20" fill="#344054" font-weight="400" text-anchor="middle">Learn in simulation, then adapt the policy to a real Franka Research 3</text>
+<text x="257" y="167" font-size="25" fill="#2463a8" font-weight="700" text-anchor="middle">SIMULATION TRAINING</text>
+<text x="257" y="195" font-size="21" fill="#344054" font-weight="400" text-anchor="middle">Learning + quantitative evaluation</text>
+<text x="823" y="167" font-size="25" fill="#147d69" font-weight="700" text-anchor="middle">REAL ROBOT DEPLOYMENT</text>
+<text x="823" y="195" font-size="21" fill="#344054" font-weight="400" text-anchor="middle">Perception + policy-assisted execution</text>
+<rect x="24" y="220" width="466" height="172" rx="18" fill="#f5f9ff" stroke="#2463a8" stroke-width="1.7"/>
+<circle cx="63" cy="259" r="20" fill="#2463a8"/>
+<text x="63" y="266" font-size="22" fill="#ffffff" font-weight="700" text-anchor="middle">1</text>
+<text x="97" y="266" font-size="25" fill="#172b4d" font-weight="700" text-anchor="start">Build the simulated task</text>
+<text x="50" y="311" font-size="21" fill="#344054" font-weight="400" text-anchor="start">MuJoCo + robosuite tabletop cube task</text>
+<text x="50" y="341" font-size="21" fill="#344054" font-weight="400" text-anchor="start">FR3v2 arm, gripper, table and cube</text>
+<text x="50" y="371" font-size="21" fill="#344054" font-weight="400" text-anchor="start">Set the workspace and lift objective</text>
+<rect x="590" y="220" width="466" height="172" rx="18" fill="#f3faf7" stroke="#147d69" stroke-width="1.7"/>
+<circle cx="629" cy="259" r="20" fill="#147d69"/>
+<text x="629" y="266" font-size="22" fill="#ffffff" font-weight="700" text-anchor="middle">5</text>
+<text x="663" y="266" font-size="25" fill="#172b4d" font-weight="700" text-anchor="start">Locate the real cube</text>
+<text x="616" y="311" font-size="21" fill="#344054" font-weight="400" text-anchor="start">RealSense RGB images + ArUco marker</text>
+<text x="616" y="341" font-size="21" fill="#344054" font-weight="400" text-anchor="start">Hand-eye calibration links the camera</text>
+<text x="616" y="371" font-size="21" fill="#344054" font-weight="400" text-anchor="start">coordinates to the robot base</text>
+<path d="M257 395 V425" fill="none" stroke="#64748b" stroke-width="2.2" marker-end="url(#arrow)"/>
+<path d="M823 395 V425" fill="none" stroke="#64748b" stroke-width="2.2" marker-end="url(#arrow)"/>
+<rect x="24" y="432" width="466" height="172" rx="18" fill="#f5f9ff" stroke="#2463a8" stroke-width="1.7"/>
+<circle cx="63" cy="471" r="20" fill="#2463a8"/>
+<text x="63" y="478" font-size="22" fill="#ffffff" font-weight="700" text-anchor="middle">2</text>
+<text x="97" y="478" font-size="25" fill="#172b4d" font-weight="700" text-anchor="start">Define the policy input</text>
+<text x="50" y="523" font-size="21" fill="#344054" font-weight="400" text-anchor="start">14 values: arm, gripper and cube state</text>
+<text x="50" y="553" font-size="21" fill="#344054" font-weight="400" text-anchor="start">Express positions in the robot frame</text>
+<text x="50" y="583" font-size="21" fill="#344054" font-weight="400" text-anchor="start">4 outputs: x/y/z motion + gripper</text>
+<rect x="590" y="432" width="466" height="172" rx="18" fill="#f3faf7" stroke="#147d69" stroke-width="1.7"/>
+<circle cx="629" cy="471" r="20" fill="#147d69"/>
+<text x="629" y="478" font-size="22" fill="#ffffff" font-weight="700" text-anchor="middle">6</text>
+<text x="663" y="478" font-size="25" fill="#172b4d" font-weight="700" text-anchor="start">Build the real policy input</text>
+<text x="616" y="523" font-size="21" fill="#344054" font-weight="400" text-anchor="start">Read the robot pose from ROS TF</text>
+<text x="616" y="553" font-size="21" fill="#344054" font-weight="400" text-anchor="start">Add the calibrated marker pose</text>
+<text x="616" y="583" font-size="21" fill="#344054" font-weight="400" text-anchor="start">Use the same 14-value input layout</text>
+<path d="M257 607 V637" fill="none" stroke="#64748b" stroke-width="2.2" marker-end="url(#arrow)"/>
+<path d="M823 607 V637" fill="none" stroke="#64748b" stroke-width="2.2" marker-end="url(#arrow)"/>
+<rect x="24" y="644" width="466" height="172" rx="18" fill="#f5f9ff" stroke="#2463a8" stroke-width="1.7"/>
+<circle cx="63" cy="683" r="20" fill="#2463a8"/>
+<text x="63" y="690" font-size="22" fill="#ffffff" font-weight="700" text-anchor="middle">3</text>
+<text x="97" y="690" font-size="25" fill="#172b4d" font-weight="700" text-anchor="start">Train the SAC policy</text>
+<text x="50" y="735" font-size="21" fill="#344054" font-weight="400" text-anchor="start">Learn from movement, contact and reward</text>
+<text x="50" y="765" font-size="21" fill="#344054" font-weight="400" text-anchor="start">Workspace limits constrain motion</text>
+<text x="50" y="795" font-size="21" fill="#344054" font-weight="400" text-anchor="start">Rewards favor a small, stable lift</text>
+<rect x="590" y="644" width="466" height="172" rx="18" fill="#f3faf7" stroke="#147d69" stroke-width="1.7"/>
+<circle cx="629" cy="683" r="20" fill="#147d69"/>
+<text x="629" y="690" font-size="22" fill="#ffffff" font-weight="700" text-anchor="middle">7</text>
+<text x="663" y="690" font-size="25" fill="#172b4d" font-weight="700" text-anchor="start">Run the saved policy</text>
+<text x="616" y="735" font-size="21" fill="#344054" font-weight="400" text-anchor="start">Load the simulation-trained SAC policy</text>
+<text x="616" y="765" font-size="21" fill="#344054" font-weight="400" text-anchor="start">Predict the next approach movement</text>
+<text x="616" y="795" font-size="21" fill="#344054" font-weight="400" text-anchor="start">Scale, filter and limit the target</text>
+<path d="M257 819 V849" fill="none" stroke="#64748b" stroke-width="2.2" marker-end="url(#arrow)"/>
+<path d="M823 819 V849" fill="none" stroke="#64748b" stroke-width="2.2" marker-end="url(#arrow)"/>
+<rect x="24" y="856" width="466" height="172" rx="18" fill="#f5f9ff" stroke="#2463a8" stroke-width="1.7"/>
+<circle cx="63" cy="895" r="20" fill="#2463a8"/>
+<text x="63" y="902" font-size="22" fill="#ffffff" font-weight="700" text-anchor="middle">4</text>
+<text x="97" y="902" font-size="25" fill="#172b4d" font-weight="700" text-anchor="start">Evaluate and save</text>
+<text x="50" y="947" font-size="21" fill="#344054" font-weight="400" text-anchor="start">Measure reward and lift/hold success</text>
+<text x="50" y="977" font-size="21" fill="#344054" font-weight="400" text-anchor="start">Save the final policy and experiment logs</text>
+<text x="50" y="1007" font-size="21" fill="#344054" font-weight="400" text-anchor="start">Final scheduled evaluation: 9/10 holds</text>
+<rect x="590" y="856" width="466" height="172" rx="18" fill="#f3faf7" stroke="#147d69" stroke-width="1.7"/>
+<circle cx="629" cy="895" r="20" fill="#147d69"/>
+<text x="629" y="902" font-size="22" fill="#ffffff" font-weight="700" text-anchor="middle">8</text>
+<text x="663" y="902" font-size="25" fill="#172b4d" font-weight="700" text-anchor="start">Execute grasp and lift</text>
+<text x="616" y="947" font-size="21" fill="#344054" font-weight="400" text-anchor="start">MoveIt + FR3 controller move the arm</text>
+<text x="616" y="977" font-size="21" fill="#344054" font-weight="400" text-anchor="start">Policy + proximity trigger closing</text>
+<text x="616" y="1007" font-size="21" fill="#344054" font-weight="400" text-anchor="start">A preset motion lifts vertically</text>
+<path d="M493 559 H587" fill="none" stroke="#64748b" stroke-width="2.1" stroke-dasharray="6 5" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<text x="540" y="521" font-size="18" fill="#526072" font-weight="600" text-anchor="middle">Same</text>
+<text x="540" y="545" font-size="18" fill="#526072" font-weight="600" text-anchor="middle">input layout</text>
+<path d="M493 942 H521 V773 H587" fill="none" stroke="#936d22" stroke-width="2.1" stroke-dasharray="6 5" marker-end="url(#transfer-arrow)"/>
+<text x="551" y="853" font-size="18" fill="#805e1d" font-weight="600" text-anchor="middle">Saved</text>
+<text x="551" y="877" font-size="18" fill="#805e1d" font-weight="600" text-anchor="middle">policy</text>
+<text x="540" y="1071" font-size="19" fill="#344054" font-weight="400" text-anchor="middle">Solid arrows: workflow steps. Dashed arrows: shared input layout and policy transfer.</text>
+</g></svg>
