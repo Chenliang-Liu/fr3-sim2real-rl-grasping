@@ -1,0 +1,7 @@
+# For inspecting existing logs and building repository figures/previews only.
+# These are not the original training environment versions.
+numpy>=2.2,<3
+matplotlib>=3.9,<4
+tensorboard>=2.18,<3
+imageio-ffmpeg>=0.6,<1
+Pillow>=10,<13

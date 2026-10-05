@@ -1,0 +1,10 @@
+# Preserve exact artifact bytes and SHA-256 hashes on every platform.
+# In particular, do not normalize the archived research sources or logs.
+* -text
+*.png binary
+*.gif binary
+*.mp4 binary
+*.pdf binary
+*.zip binary
+*.npz binary
+events.out.tfevents.* binary

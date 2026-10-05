@@ -1,0 +1,16 @@
+# Partial reconstruction from the saved SAC model archives, not a full environment lock.
+# Recorded Python version: 3.10.19. See docs/simulation.md before installing.
+numpy==2.2.6
+gymnasium==1.2.3
+stable-baselines3==2.7.1
+cloudpickle==3.1.2
+# Archive records 2.10.0+cu128. This pin does not select that CUDA wheel.
+torch==2.10.0
+
+# These are required by source functionality, but their original versions were not recorded.
+# Stock robosuite alone does not establish availability of the custom FR3v2 model.
+robosuite
+mujoco
+tensorboard
+imageio
+imageio-ffmpeg
