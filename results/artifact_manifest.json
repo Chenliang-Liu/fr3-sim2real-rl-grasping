@@ -1,0 +1,677 @@
+{
+  "schema_version": 1,
+  "purpose": "Provenance of supplied research artifacts and publication additions",
+  "hash_algorithm": "SHA-256",
+  "excludes": [
+    "This manifest itself",
+    "Git metadata",
+    "Python caches"
+  ],
+  "files": [
+    {
+      "file": ".gitattributes",
+      "bytes": 258,
+      "sha256": "afc1f0be5b7b19ebe096f925e6674df16184a151a566d6e9cadbf667da7f28fb",
+      "provenance": "Added repository documentation, analysis, or derived presentation asset"
+    },
+    {
+      "file": ".gitignore",
+      "bytes": 283,
+      "sha256": "258498158b36f481c1c22c9632bfaa1fcfa2915a1bc456014aa056eeff1fd64d",
+      "provenance": "Added repository documentation, analysis, or derived presentation asset"
+    },
+    {
+      "file": "assets/figures/eval_controlled_lift_success_rate.png",
+      "bytes": 39822,
+      "sha256": "ba5289ad618fcfbd54869f2ef500c5700bda4a72bb279984b9eaab404b5e7b45",
+      "supplied_file": "thesis/eval_controlled_lift_success_rate.png",
+      "supplied_sha256": "ba5289ad618fcfbd54869f2ef500c5700bda4a72bb279984b9eaab404b5e7b45",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    },
+    {
+      "file": "assets/figures/eval_held_success_rate.png",
+      "bytes": 37870,
+      "sha256": "704f99bddd7c5b62b8a41bf0ddd8bf83d8ad0ad6a8afac1545f05ffeb851f357",
+      "supplied_file": "thesis/eval_held_success_rate.png",
+      "supplied_sha256": "704f99bddd7c5b62b8a41bf0ddd8bf83d8ad0ad6a8afac1545f05ffeb851f357",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    },
+    {
+      "file": "assets/figures/eval_mean_ep_length.png",
+      "bytes": 40805,
+      "sha256": "7793324198dcbaa19ad9294f907632c200d38c3663061b3b50d421f2b3eb2cfd",
+      "supplied_file": "thesis/eval_mean_ep_length.png",
+      "supplied_sha256": "7793324198dcbaa19ad9294f907632c200d38c3663061b3b50d421f2b3eb2cfd",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    },
+    {
+      "file": "assets/figures/eval_mean_reward.png",
+      "bytes": 52046,
+      "sha256": "ad3c7dae7a040e43f77abdb6455caae872e6c24943b448df53b154d8f524c7a7",
+      "supplied_file": "thesis/eval_mean_reward.png",
+      "supplied_sha256": "ad3c7dae7a040e43f77abdb6455caae872e6c24943b448df53b154d8f524c7a7",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    },
+    {
+      "file": "assets/figures/fig_4_3_1_training_convergence.png",
+      "bytes": 557122,
+      "sha256": "d6d0dc83ebc93aa9b60e4d2061026de5424860a75497cb21ada3e78c5b1679a1",
+      "supplied_file": "thesis/fig_4_3_1_training_convergence.png",
+      "supplied_sha256": "d6d0dc83ebc93aa9b60e4d2061026de5424860a75497cb21ada3e78c5b1679a1",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    },
+    {
+      "file": "assets/figures/fig_4_3_2_task_success_rate.png",
+      "bytes": 801026,
+      "sha256": "06c19f1a524490b1956e1fa73bf66fc05218535850b2371b8e9d8762aa1a3e4f",
+      "supplied_file": "thesis/fig_4_3_2_task_success_rate.png",
+      "supplied_sha256": "06c19f1a524490b1956e1fa73bf66fc05218535850b2371b8e9d8762aa1a3e4f",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    },
+    {
+      "file": "assets/figures/frame.png",
+      "bytes": 201429,
+      "sha256": "2f595f0355e1ae2051a127e2f810c4050e8e29a186816cac12052f85671774be",
+      "supplied_file": "thesis/frame.png",
+      "supplied_sha256": "2f595f0355e1ae2051a127e2f810c4050e8e29a186816cac12052f85671774be",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    },
+    {
+      "file": "assets/figures/hand-eye-calib.png",
+      "bytes": 1141001,
+      "sha256": "6e0a99937fe255e3b1206c718edaf2c9021214fc69d3af89c508e6e9f536a003",
+      "supplied_file": "thesis/hand-eye-calib.png",
+      "supplied_sha256": "6e0a99937fe255e3b1206c718edaf2c9021214fc69d3af89c508e6e9f536a003",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    },
+    {
+      "file": "assets/figures/perception_pipeline.svg",
+      "bytes": 9018,
+      "sha256": "c24040ea44cfd326d35b4bfc2d9d11070b990b99ef474cba7ac42a3c7af529f2",
+      "provenance": "Added repository documentation, analysis, or derived presentation asset"
+    },
+    {
+      "file": "assets/figures/system_overview.svg",
+      "bytes": 9754,
+      "sha256": "082d37c6991183db462ec90b99a5bd8968d2a90abeca958ce5c3eb10a60753de",
+      "provenance": "Added repository documentation, analysis, or derived presentation asset"
+    },
+    {
+      "file": "assets/videos/real_grasp.mp4",
+      "bytes": 1064134,
+      "sha256": "c4207201963ef58a3238e57e9b13f088ad58f324a149920ab15cfd29937bfa73",
+      "supplied_file": "real_grasp.mp4",
+      "supplied_sha256": "c4207201963ef58a3238e57e9b13f088ad58f324a149920ab15cfd29937bfa73",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    },
+    {
+      "file": "assets/videos/real_grasp_poster.png",
+      "bytes": 952698,
+      "sha256": "0dc4a75dd7918a3edd575bd332d76feed5222f17d41dd2350b3f023e24bade54",
+      "provenance": "Added repository documentation, analysis, or derived presentation asset"
+    },
+    {
+      "file": "assets/videos/real_grasp_preview.gif",
+      "bytes": 3823005,
+      "sha256": "49a845add8c6b4177c1f818d06c85842a3c6cd73ac32e03840df62f4b37c2039",
+      "provenance": "Added repository documentation, analysis, or derived presentation asset"
+    },
+    {
+      "file": "assets/videos/real_grasp_web.mp4",
+      "bytes": 1784194,
+      "sha256": "4e8a3fc59a2a3cac07747db2d3450fe2ebc605154420bc47cc22bb596904aefb",
+      "provenance": "Added repository documentation, analysis, or derived presentation asset"
+    },
+    {
+      "file": "assets/videos/sim_grasp.mp4",
+      "bytes": 180608,
+      "sha256": "6bd387074229de919bc21aa5823a3d505dc5bea79f13889da077c6524d4524f5",
+      "supplied_file": "sim_grasp.mp4",
+      "supplied_sha256": "6bd387074229de919bc21aa5823a3d505dc5bea79f13889da077c6524d4524f5",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    },
+    {
+      "file": "assets/videos/sim_grasp_poster.png",
+      "bytes": 536321,
+      "sha256": "c6365617106adb9793a207ad842aefc59a27f78a73069028dbf47c39d789fa1b",
+      "provenance": "Added repository documentation, analysis, or derived presentation asset"
+    },
+    {
+      "file": "assets/videos/sim_grasp_preview.gif",
+      "bytes": 255237,
+      "sha256": "a1ffefea2238ff1cc46a58b1c8dd6854dd848f36e745b47e3f247e51535ae5d3",
+      "provenance": "Added repository documentation, analysis, or derived presentation asset"
+    },
+    {
+      "file": "docs/publishing.md",
+      "bytes": 2580,
+      "sha256": "b1912d099df062d2970baf753453918af33a40b87f0763839373d89e5c4a7f99",
+      "provenance": "Added repository documentation, analysis, or derived presentation asset"
+    },
+    {
+      "file": "docs/results.md",
+      "bytes": 10504,
+      "sha256": "c5146b2466c2ee77af9545667d37096f291074b95fad00ed27fca1191cad7b37",
+      "provenance": "Added repository documentation, analysis, or derived presentation asset"
+    },
+    {
+      "file": "docs/sim2real.md",
+      "bytes": 22867,
+      "sha256": "abe287de1c1e8a4dac2af376de10139e770f59a2b5ddee8e28b5a75716a53cba",
+      "provenance": "Added repository documentation, analysis, or derived presentation asset"
+    },
+    {
+      "file": "docs/simulation.md",
+      "bytes": 15150,
+      "sha256": "7e2d250fcb3a178ca8626998d8bff9c27a2f72bca5c6644c04e4bf3651cea5f5",
+      "provenance": "Added repository documentation, analysis, or derived presentation asset"
+    },
+    {
+      "file": "docs/terminal_logs/README.md",
+      "bytes": 1290,
+      "sha256": "6c66c82d273ac921e9fb7511dd4c724e18fbca0ac3dc1a4d74debe7467d0f881",
+      "provenance": "Added repository documentation, analysis, or derived presentation asset"
+    },
+    {
+      "file": "docs/terminal_logs/terminal_1.txt",
+      "bytes": 4465,
+      "sha256": "8caa62222d8fbbe240990efcca52c03ae91727e06a2df1af3b874a6d96ac2823",
+      "supplied_file": "fr3_sim2real/terminal_1.txt",
+      "supplied_sha256": "eb97df04f432170408d251413b6a959bbb7361ecbc01284a93d7236f0428750a",
+      "provenance": "Added historical-record header and replaced workstation/device identifiers"
+    },
+    {
+      "file": "docs/terminal_logs/terminal_2.txt",
+      "bytes": 1631,
+      "sha256": "6361a0d88ab148c4496d24577604e07fd7ce1ad620f07f28770acc132d76aeee",
+      "supplied_file": "fr3_sim2real/terminal_2.txt",
+      "supplied_sha256": "a91b72e5e21edfe640704c8353b476e6312f0c7aad220eab8d7bea9008a47ff9",
+      "provenance": "Added historical-record header and replaced workstation/device identifiers"
+    },
+    {
+      "file": "docs/terminal_logs/terminal_3.txt",
+      "bytes": 303,
+      "sha256": "98f2e5b8106f455e9c07cb87af195587a1b1f58dac2333368c5d99c80b6c8522",
+      "supplied_file": "fr3_sim2real/terminal_3.txt",
+      "supplied_sha256": "b7b72847088b44563af9c58f33ac8dedd3b1a7a0f5d08683838f4f68f0cbe90c",
+      "provenance": "Added historical-record header and replaced workstation/device identifiers"
+    },
+    {
+      "file": "docs/terminal_logs/terminal_4.txt",
+      "bytes": 1056,
+      "sha256": "de1ce527948c032ebd31650902e112da213079a2caffdfacacf2d486383dcfbf",
+      "supplied_file": "fr3_sim2real/terminal_4.txt",
+      "supplied_sha256": "683b43189fe4efa3cba004da906737f6b2af94c07db6b54a6b3cc8cdc604b551",
+      "provenance": "Added historical-record header and replaced workstation/device identifiers"
+    },
+    {
+      "file": "docs/terminal_logs/terminal_5.txt",
+      "bytes": 15639,
+      "sha256": "c19b73535ac350208fe22ec64f43cd6d1bc9c1e489e7b75bdb3281348aef69e5",
+      "supplied_file": "fr3_sim2real/terminal_5.txt",
+      "supplied_sha256": "e433a2776d7814f4433374cd7974a38f4865bfad7899b1961b88fd99e505182f",
+      "provenance": "Added historical-record header and replaced workstation/device identifiers"
+    },
+    {
+      "file": "docs/terminal_logs/terminal_6.txt",
+      "bytes": 1235,
+      "sha256": "4532ac02c04516cad29d617a868f6ab3c6360a98a9c78014e407a6d6f1ee7b5e",
+      "supplied_file": "fr3_sim2real/terminal_6.txt",
+      "supplied_sha256": "5c4e985303b1394a18c2e214c827940b9a7c5935640d42e808eecbdb9f0c1854",
+      "provenance": "Added historical-record header and replaced workstation/device identifiers"
+    },
+    {
+      "file": "docs/terminal_logs/terminal_7.txt",
+      "bytes": 372,
+      "sha256": "e39a683d58197b475eb6a3cf9f7f5c126497ab9a8711d5e8f4615e00ef1932b3",
+      "supplied_file": "fr3_sim2real/terminal_7.txt",
+      "supplied_sha256": "c6e15f6bc17ed10f25cc7e5625c5a600e66c25dd8807b4c540db4c643190809f",
+      "provenance": "Added historical-record header and replaced workstation/device identifiers"
+    },
+    {
+      "file": "docs/terminal_logs/terminal_8.txt",
+      "bytes": 1044,
+      "sha256": "3e4f98e4db272716f96693ffb34278c78d8183a721109bd295e683c6195bb704",
+      "supplied_file": "fr3_sim2real/terminal_8.txt",
+      "supplied_sha256": "489396b59cdbcabc3a59822138a1f7241950907a2e816f86ede61f28e23b9060",
+      "provenance": "Added historical-record header and replaced workstation/device identifiers"
+    },
+    {
+      "file": "fr3_sim2real/aruco_cube_pose_node.py",
+      "bytes": 7711,
+      "sha256": "dfe46d9fe8977439b5d77f52506aeccc06f446086c7bd059c16a7b9fadf2c58e",
+      "supplied_file": "fr3_sim2real/aruco_cube_pose_node.py",
+      "supplied_sha256": "dfe46d9fe8977439b5d77f52506aeccc06f446086c7bd059c16a7b9fadf2c58e",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    },
+    {
+      "file": "fr3_sim2real/fr3_controller.py",
+      "bytes": 25368,
+      "sha256": "77b4892005b78c3c48d1db6d0b85b8b99300f8e74778b7bb3c0ee9ca471f3a9b",
+      "supplied_project": "FR3_ROS2_Workspace-master",
+      "supplied_file": "src/my_controller/fr3_controller.py",
+      "supplied_sha256": "77b4892005b78c3c48d1db6d0b85b8b99300f8e74778b7bb3c0ee9ca471f3a9b",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    },
+    {
+      "file": "fr3_sim2real/LICENSE-controller-Apache-2.0.txt",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "supplied_project": "FR3_ROS2_Workspace-master",
+      "supplied_file": "LICENSE",
+      "supplied_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    },
+    {
+      "file": "fr3_sim2real/README.md",
+      "bytes": 4161,
+      "sha256": "0e2fc8a9b9cdcde1e76059df434111f646a9f94f5dc581ce3a433866ca53458e",
+      "provenance": "Added repository documentation, analysis, or derived presentation asset"
+    },
+    {
+      "file": "fr3_sim2real/real_fr3_policy_cartesian.py",
+      "bytes": 13317,
+      "sha256": "db5a8e1a407d5afd310ebd38e0dc84dad28e93d8c6ae0ef14c50bdc1cc77972b",
+      "supplied_file": "fr3_sim2real/real_fr3_policy_cartesian.py",
+      "supplied_sha256": "b8a82113fe1c0e9aff6bc506deaaa1e8d703861eaa36e41a1f5d1212d1547283",
+      "provenance": "Publication execution-gate and external-controller import changes; see PUBLICATION_NOTES.md"
+    },
+    {
+      "file": "PUBLICATION_NOTES.md",
+      "bytes": 3893,
+      "sha256": "fedc69d5e5aa33a668fc16ff4bf8b8871a8c87ca7121381b2134015ec3237f0c",
+      "provenance": "Added repository documentation, analysis, or derived presentation asset"
+    },
+    {
+      "file": "README.md",
+      "bytes": 13881,
+      "sha256": "230e0015b4379a1df3e4ddf280dc4d0aa038b3e25db1678025c34797eb2dad03",
+      "provenance": "Added repository documentation, analysis, or derived presentation asset"
+    },
+    {
+      "file": "requirements-analysis.txt",
+      "bytes": 230,
+      "sha256": "a492f61838751cf7008c85a44be3edf6f161a9260b73c43886862a95bd240815",
+      "provenance": "Added repository documentation, analysis, or derived presentation asset"
+    },
+    {
+      "file": "requirements-sim.txt",
+      "bytes": 558,
+      "sha256": "6ab91a84332e8f46408ab9208aac59ffea4f1f7ade135041c9cd40e5ff2e7685",
+      "provenance": "Added repository documentation, analysis, or derived presentation asset"
+    },
+    {
+      "file": "results/evaluation_history.csv",
+      "bytes": 9809,
+      "sha256": "efd78aac0d5a7b4f500bc6efbbbc0d0367a412f6a42a1106d5a74a0c7016ff0a",
+      "provenance": "Added repository documentation, analysis, or derived presentation asset"
+    },
+    {
+      "file": "results/evaluation_summary.json",
+      "bytes": 4267,
+      "sha256": "cf532a7266491065f50fac7c6ed5ddba5953d80b5515bda81843f5590ee5e49a",
+      "provenance": "Added repository documentation, analysis, or derived presentation asset"
+    },
+    {
+      "file": "results/tensorboard_summary.json",
+      "bytes": 22705,
+      "sha256": "d0e7f2fce6d7325e008dd8666c60127af1ca8368faea2645dd1f280f6ae27792",
+      "provenance": "Added repository documentation, analysis, or derived presentation asset"
+    },
+    {
+      "file": "scripts/build_system_diagram.py",
+      "bytes": 5597,
+      "sha256": "8cf1a0435177406079885c815ff4fc741971f997ca70cc56a09558179c4febd3",
+      "provenance": "Added repository documentation, analysis, or derived presentation asset"
+    },
+    {
+      "file": "scripts/build_video_previews.py",
+      "bytes": 1704,
+      "sha256": "5f7577ff7923b7c274368ff9f9b05b21f74949ac56f3efeac405dd730a510b10",
+      "provenance": "Added repository documentation, analysis, or derived presentation asset"
+    },
+    {
+      "file": "scripts/summarize_evaluations.py",
+      "bytes": 15227,
+      "sha256": "c1d6308a3518880221fa9d7c979372dcda32b002669c0609b3a98ab72c4e8f6f",
+      "provenance": "Added repository documentation, analysis, or derived presentation asset"
+    },
+    {
+      "file": "tests/test_real_execution_gate.py",
+      "bytes": 7242,
+      "sha256": "1a3d0533a5055b08c96316cfbd4b38ee41996f9f601f93b5a6a23dbe62f96487",
+      "provenance": "Added repository documentation, analysis, or derived presentation asset"
+    },
+    {
+      "file": "thesis/0.png",
+      "bytes": 791550,
+      "sha256": "9170e65498d09a8a79157e921a9d27eec30a87b629e93eda0977f1f8aa4bb2d0",
+      "supplied_file": "thesis/0.png",
+      "supplied_sha256": "9170e65498d09a8a79157e921a9d27eec30a87b629e93eda0977f1f8aa4bb2d0",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    },
+    {
+      "file": "thesis/1.png",
+      "bytes": 812786,
+      "sha256": "4f66cd743d48f2e11a826a17b5e310b3e02a8976c2a5953dcbcedaf0edd36d6c",
+      "supplied_file": "thesis/1.png",
+      "supplied_sha256": "4f66cd743d48f2e11a826a17b5e310b3e02a8976c2a5953dcbcedaf0edd36d6c",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    },
+    {
+      "file": "thesis/2.png",
+      "bytes": 811702,
+      "sha256": "2da227bbc804c22a7f5215fb284bc57447a98e4dea0d32b3e79f6744c7d0dd39",
+      "supplied_file": "thesis/2.png",
+      "supplied_sha256": "2da227bbc804c22a7f5215fb284bc57447a98e4dea0d32b3e79f6744c7d0dd39",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    },
+    {
+      "file": "thesis/3.png",
+      "bytes": 805975,
+      "sha256": "16ff2ca5cf9f49c9b7af8962218ceeaf458418e0b59c943aff06e60f94b115c4",
+      "supplied_file": "thesis/3.png",
+      "supplied_sha256": "16ff2ca5cf9f49c9b7af8962218ceeaf458418e0b59c943aff06e60f94b115c4",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    },
+    {
+      "file": "thesis/4.png",
+      "bytes": 1699215,
+      "sha256": "39b927e4382fcd484212b612a190c0efb8608c0cf739368497d56f205f6b2433",
+      "supplied_file": "thesis/4.png",
+      "supplied_sha256": "39b927e4382fcd484212b612a190c0efb8608c0cf739368497d56f205f6b2433",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    },
+    {
+      "file": "thesis/5.png",
+      "bytes": 1753297,
+      "sha256": "669e04274b364eed408f482d767fd21c79072d6209bb60dabb248d2a60a63570",
+      "supplied_file": "thesis/5.png",
+      "supplied_sha256": "669e04274b364eed408f482d767fd21c79072d6209bb60dabb248d2a60a63570",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    },
+    {
+      "file": "thesis/6.png",
+      "bytes": 1797789,
+      "sha256": "d092f8f93297c16423da8a811d7cca1d4d494f5d3425f4bccfdb441ed9a8285f",
+      "supplied_file": "thesis/6.png",
+      "supplied_sha256": "d092f8f93297c16423da8a811d7cca1d4d494f5d3425f4bccfdb441ed9a8285f",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    },
+    {
+      "file": "thesis/7.png",
+      "bytes": 1808286,
+      "sha256": "248f54e08b0aae4636b5e9a3e26a04c8b63ff897477b8d0d42b71d4ea246e8e1",
+      "supplied_file": "thesis/7.png",
+      "supplied_sha256": "248f54e08b0aae4636b5e9a3e26a04c8b63ff897477b8d0d42b71d4ea246e8e1",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    },
+    {
+      "file": "thesis/app1.png",
+      "bytes": 153213,
+      "sha256": "2f8b576a12def1127db822410d72771c9911250d06cebb9de2f1b6f91b72a485",
+      "supplied_file": "thesis/app1.png",
+      "supplied_sha256": "2f8b576a12def1127db822410d72771c9911250d06cebb9de2f1b6f91b72a485",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    },
+    {
+      "file": "thesis/app2.png",
+      "bytes": 497145,
+      "sha256": "1369ce9dfa52120b35e1e0aca7e35abc43967f2ca26cb92e198052b412ae8790",
+      "supplied_file": "thesis/app2.png",
+      "supplied_sha256": "1369ce9dfa52120b35e1e0aca7e35abc43967f2ca26cb92e198052b412ae8790",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    },
+    {
+      "file": "thesis/eval_controlled_lift_success_rate.png",
+      "bytes": 39822,
+      "sha256": "ba5289ad618fcfbd54869f2ef500c5700bda4a72bb279984b9eaab404b5e7b45",
+      "supplied_file": "thesis/eval_controlled_lift_success_rate.png",
+      "supplied_sha256": "ba5289ad618fcfbd54869f2ef500c5700bda4a72bb279984b9eaab404b5e7b45",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    },
+    {
+      "file": "thesis/eval_held_success_rate.png",
+      "bytes": 37870,
+      "sha256": "704f99bddd7c5b62b8a41bf0ddd8bf83d8ad0ad6a8afac1545f05ffeb851f357",
+      "supplied_file": "thesis/eval_held_success_rate.png",
+      "supplied_sha256": "704f99bddd7c5b62b8a41bf0ddd8bf83d8ad0ad6a8afac1545f05ffeb851f357",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    },
+    {
+      "file": "thesis/eval_mean_ep_length.png",
+      "bytes": 40805,
+      "sha256": "7793324198dcbaa19ad9294f907632c200d38c3663061b3b50d421f2b3eb2cfd",
+      "supplied_file": "thesis/eval_mean_ep_length.png",
+      "supplied_sha256": "7793324198dcbaa19ad9294f907632c200d38c3663061b3b50d421f2b3eb2cfd",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    },
+    {
+      "file": "thesis/eval_mean_reward.png",
+      "bytes": 52046,
+      "sha256": "ad3c7dae7a040e43f77abdb6455caae872e6c24943b448df53b154d8f524c7a7",
+      "supplied_file": "thesis/eval_mean_reward.png",
+      "supplied_sha256": "ad3c7dae7a040e43f77abdb6455caae872e6c24943b448df53b154d8f524c7a7",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    },
+    {
+      "file": "thesis/fig_4_3_1_training_convergence.png",
+      "bytes": 557122,
+      "sha256": "d6d0dc83ebc93aa9b60e4d2061026de5424860a75497cb21ada3e78c5b1679a1",
+      "supplied_file": "thesis/fig_4_3_1_training_convergence.png",
+      "supplied_sha256": "d6d0dc83ebc93aa9b60e4d2061026de5424860a75497cb21ada3e78c5b1679a1",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    },
+    {
+      "file": "thesis/fig_4_3_2_task_success_rate.png",
+      "bytes": 801026,
+      "sha256": "06c19f1a524490b1956e1fa73bf66fc05218535850b2371b8e9d8762aa1a3e4f",
+      "supplied_file": "thesis/fig_4_3_2_task_success_rate.png",
+      "supplied_sha256": "06c19f1a524490b1956e1fa73bf66fc05218535850b2371b8e9d8762aa1a3e4f",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    },
+    {
+      "file": "thesis/frame.png",
+      "bytes": 201429,
+      "sha256": "2f595f0355e1ae2051a127e2f810c4050e8e29a186816cac12052f85671774be",
+      "supplied_file": "thesis/frame.png",
+      "supplied_sha256": "2f595f0355e1ae2051a127e2f810c4050e8e29a186816cac12052f85671774be",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    },
+    {
+      "file": "thesis/hand-eye-calib.png",
+      "bytes": 1141001,
+      "sha256": "6e0a99937fe255e3b1206c718edaf2c9021214fc69d3af89c508e6e9f536a003",
+      "supplied_file": "thesis/hand-eye-calib.png",
+      "supplied_sha256": "6e0a99937fe255e3b1206c718edaf2c9021214fc69d3af89c508e6e9f536a003",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    },
+    {
+      "file": "thesis/LICENSE-LPPL.txt",
+      "bytes": 19105,
+      "sha256": "27597ab18210ecf1285ec984cb153df71cf17119347a3fb5ca52b15eccba53f6",
+      "supplied_file": "thesis/LICENSE",
+      "supplied_sha256": "27597ab18210ecf1285ec984cb153df71cf17119347a3fb5ca52b15eccba53f6",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    },
+    {
+      "file": "thesis/nju-emblem-purple.pdf",
+      "bytes": 29357,
+      "sha256": "0c65c51acdf9abc6b5ed84704e9381047bfaa436df826dbacc8bbf5ed00d6d43",
+      "supplied_file": "thesis/nju-emblem-purple.pdf",
+      "supplied_sha256": "0c65c51acdf9abc6b5ed84704e9381047bfaa436df826dbacc8bbf5ed00d6d43",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    },
+    {
+      "file": "thesis/nju-emblem.pdf",
+      "bytes": 29342,
+      "sha256": "d3e8a0409f5b24742663a7693bcb1263a9beb0d7d6c943edac0c1777dc3c59a9",
+      "supplied_file": "thesis/nju-emblem.pdf",
+      "supplied_sha256": "d3e8a0409f5b24742663a7693bcb1263a9beb0d7d6c943edac0c1777dc3c59a9",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    },
+    {
+      "file": "thesis/nju-name-purple.pdf",
+      "bytes": 15146,
+      "sha256": "181fa80aa4f244785791d8f397ac9f4fd217242caef6491eda41852113c6e534",
+      "supplied_file": "thesis/nju-name-purple.pdf",
+      "supplied_sha256": "181fa80aa4f244785791d8f397ac9f4fd217242caef6491eda41852113c6e534",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    },
+    {
+      "file": "thesis/nju-name.pdf",
+      "bytes": 15140,
+      "sha256": "df34767d5953738847758881da64de8601c610339d91cfc7aa4179fd6748028a",
+      "supplied_file": "thesis/nju-name.pdf",
+      "supplied_sha256": "df34767d5953738847758881da64de8601c610339d91cfc7aa4179fd6748028a",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    },
+    {
+      "file": "thesis/njuthesis-graduate.def",
+      "bytes": 27438,
+      "sha256": "3d6e0fcd6c73e64aa5cbd015a206a2573941b0a4a7f9d58b3fbfa9c78e7cce8a",
+      "supplied_file": "thesis/njuthesis-graduate.def",
+      "supplied_sha256": "3d6e0fcd6c73e64aa5cbd015a206a2573941b0a4a7f9d58b3fbfa9c78e7cce8a",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    },
+    {
+      "file": "thesis/njuthesis-postdoctoral.def",
+      "bytes": 10982,
+      "sha256": "ed8cea8ad045d4487b8666575bcf848c762ccc70eda846e2788939c5a55a5270",
+      "supplied_file": "thesis/njuthesis-postdoctoral.def",
+      "supplied_sha256": "ed8cea8ad045d4487b8666575bcf848c762ccc70eda846e2788939c5a55a5270",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    },
+    {
+      "file": "thesis/njuthesis-setup.def",
+      "bytes": 7465,
+      "sha256": "e34d7f39f28710a43350701bf4fb9cdb07da2ea07afe10cd7939b259ff9aeeda",
+      "supplied_file": "thesis/njuthesis-setup.def",
+      "supplied_sha256": "e34d7f39f28710a43350701bf4fb9cdb07da2ea07afe10cd7939b259ff9aeeda",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    },
+    {
+      "file": "thesis/njuthesis-undergraduate.def",
+      "bytes": 11204,
+      "sha256": "e7a520e22d8b7b89ceb057d61e79beebb34f29b5d7c5a54b81841ffd76454ddc",
+      "supplied_file": "thesis/njuthesis-undergraduate.def",
+      "supplied_sha256": "e7a520e22d8b7b89ceb057d61e79beebb34f29b5d7c5a54b81841ffd76454ddc",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    },
+    {
+      "file": "thesis/njuthesis.cls",
+      "bytes": 72820,
+      "sha256": "25b46539b12825d3a8b17c24b4a009a1acf2e141168939fe075c44555abda4c6",
+      "supplied_file": "thesis/njuthesis.cls",
+      "supplied_sha256": "25b46539b12825d3a8b17c24b4a009a1acf2e141168939fe075c44555abda4c6",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    },
+    {
+      "file": "thesis/njuthesis.dtx",
+      "bytes": 332043,
+      "sha256": "1cf7ebefe1944010cfa1798cfbdd1ebf5ed8b41e6ccf33ec0cb8c6144041c03b",
+      "upstream_url": "https://raw.githubusercontent.com/nju-lug/NJUThesis/v1.4.3/source/njuthesis.dtx",
+      "provenance": "Unmodified corresponding template source from official upstream v1.4.3 release"
+    },
+    {
+      "file": "thesis/README.md",
+      "bytes": 1439,
+      "sha256": "743d3575916dc30a5ecc2c3eff8416ddf8ebefd25c371a1dc6d8ffafc0a89e22",
+      "provenance": "Added repository documentation, analysis, or derived presentation asset"
+    },
+    {
+      "file": "thesis/rl-agent-env.png",
+      "bytes": 738547,
+      "sha256": "b28ba7269d91d0c9efa5697d7bb31fc73fc37fe51c5d1e309e03eca3f029d8db",
+      "supplied_file": "thesis/rl-agent-env.png",
+      "supplied_sha256": "b28ba7269d91d0c9efa5697d7bb31fc73fc37fe51c5d1e309e03eca3f029d8db",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    },
+    {
+      "file": "thesis/robot-rl-thesis.bib",
+      "bytes": 8943,
+      "sha256": "28375d57bebc3519fd45c26b5b4f5748312b4e5b23a6f596c26a935a30e4b2ee",
+      "supplied_file": "thesis/robot-rl-thesis.bib",
+      "supplied_sha256": "28375d57bebc3519fd45c26b5b4f5748312b4e5b23a6f596c26a935a30e4b2ee",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    },
+    {
+      "file": "thesis/robot-rl-thesis.pdf",
+      "bytes": 14070472,
+      "sha256": "8d1ca7cafe6c8fee8502bb9a27347e6c5d918a1720f6eac9407eab43c5a1a402",
+      "supplied_file": "毕业论文终稿.pdf",
+      "supplied_sha256": "8d1ca7cafe6c8fee8502bb9a27347e6c5d918a1720f6eac9407eab43c5a1a402",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    },
+    {
+      "file": "thesis/robot-rl-thesis.tex",
+      "bytes": 87660,
+      "sha256": "22eae16b82d0bd77b06cf9e7063cfffb6f3540e19eed3a624c7e6f3e66a7a56c",
+      "supplied_file": "thesis/robot-rl-thesis.tex",
+      "supplied_sha256": "22eae16b82d0bd77b06cf9e7063cfffb6f3540e19eed3a624c7e6f3e66a7a56c",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    },
+    {
+      "file": "thesis/visualize.png",
+      "bytes": 762951,
+      "sha256": "9954a453b92efa68b7f131f94f554517be94c17f2cc39e275017b863199182be",
+      "supplied_file": "thesis/visualize.png",
+      "supplied_sha256": "9954a453b92efa68b7f131f94f554517be94c17f2cc39e275017b863199182be",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    },
+    {
+      "file": "THIRD_PARTY_NOTICES.md",
+      "bytes": 2301,
+      "sha256": "6aa9aa262f7cc6457fb658b0f27d0747afd7b6b6c7c8e321eeb0eb49df6b09de",
+      "provenance": "Added repository documentation, analysis, or derived presentation asset"
+    },
+    {
+      "file": "train_sim/fr3v2_baseframe_lift_h0075_vertical/eval_logs/evaluations.npz",
+      "bytes": 18820,
+      "sha256": "ccacaaa7af707c67822c68a12c2c4d0b3af53d38baef8e166bb5f3e3332543cc",
+      "supplied_file": "train_sim/fr3v2_baseframe_lift_h0075_vertical/eval_logs/evaluations.npz",
+      "supplied_sha256": "ccacaaa7af707c67822c68a12c2c4d0b3af53d38baef8e166bb5f3e3332543cc",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    },
+    {
+      "file": "train_sim/fr3v2_baseframe_lift_h0075_vertical/final_model/sac_panda_lift_final.zip",
+      "bytes": 3188008,
+      "sha256": "079c953d14ebc6fe0c8802966c358e1b406ecf895bc8c64d94b16aa9a7b9f5bd",
+      "supplied_file": "train_sim/fr3v2_baseframe_lift_h0075_vertical/final_model/sac_panda_lift_final.zip",
+      "supplied_sha256": "079c953d14ebc6fe0c8802966c358e1b406ecf895bc8c64d94b16aa9a7b9f5bd",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    },
+    {
+      "file": "train_sim/fr3v2_baseframe_lift_h0075_vertical/tb/SAC_1/events.out.tfevents.1778614004.liu-B660M-GAMING-AC-DDR4.27366.0",
+      "bytes": 1180085,
+      "sha256": "c545adda09105248f5d92398915e546b76328f074e1278b1a6de4bf800ec6c09",
+      "supplied_file": "train_sim/fr3v2_baseframe_lift_h0075_vertical/tb/SAC_1/events.out.tfevents.1778614004.liu-B660M-GAMING-AC-DDR4.27366.0",
+      "supplied_sha256": "c545adda09105248f5d92398915e546b76328f074e1278b1a6de4bf800ec6c09",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    },
+    {
+      "file": "train_sim/fr3v2_baseframe_lift_h0075_vertical/tb/SAC_2/events.out.tfevents.1778622290.liu-B660M-GAMING-AC-DDR4.528767.0",
+      "bytes": 88,
+      "sha256": "b4328e5bf6c38d8db5af48ccbef74f5937d4ce418af5ae13d7e26c172505a0c8",
+      "supplied_file": "train_sim/fr3v2_baseframe_lift_h0075_vertical/tb/SAC_2/events.out.tfevents.1778622290.liu-B660M-GAMING-AC-DDR4.528767.0",
+      "supplied_sha256": "b4328e5bf6c38d8db5af48ccbef74f5937d4ce418af5ae13d7e26c172505a0c8",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    },
+    {
+      "file": "train_sim/fr3v2_baseframe_lift_h0075_vertical/tb/SAC_3/events.out.tfevents.1778622323.liu-B660M-GAMING-AC-DDR4.530520.0",
+      "bytes": 1338,
+      "sha256": "d8d61dc27944b103bd9d6bd38e69f7c114258641b949ab2d000e936cba8508cd",
+      "supplied_file": "train_sim/fr3v2_baseframe_lift_h0075_vertical/tb/SAC_3/events.out.tfevents.1778622323.liu-B660M-GAMING-AC-DDR4.530520.0",
+      "supplied_sha256": "d8d61dc27944b103bd9d6bd38e69f7c114258641b949ab2d000e936cba8508cd",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    },
+    {
+      "file": "train_sim/train_osc_position_lowdim_workspace.py",
+      "bytes": 39585,
+      "sha256": "c9b53a92c9493a87876e11b73e46032b51cd74c1b830f63121134a785979b312",
+      "supplied_file": "train_sim/train_osc_position_lowdim_workspace.py",
+      "supplied_sha256": "c9b53a92c9493a87876e11b73e46032b51cd74c1b830f63121134a785979b312",
+      "provenance": "Byte-for-byte copy of supplied artifact"
+    }
+  ]
+}

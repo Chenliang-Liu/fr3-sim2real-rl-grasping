@@ -1,0 +1,769 @@
+{
+  "schema_version": 1,
+  "source_directory": "train_sim/fr3v2_baseframe_lift_h0075_vertical/tb",
+  "event_files": [
+    {
+      "file": "train_sim/fr3v2_baseframe_lift_h0075_vertical/tb/SAC_1/events.out.tfevents.1778614004.liu-B660M-GAMING-AC-DDR4.27366.0",
+      "sha256": "c545adda09105248f5d92398915e546b76328f074e1278b1a6de4bf800ec6c09",
+      "run_directory": "SAC_1",
+      "scalar_tag_count": 31,
+      "scalar_tags": {
+        "rollout/controlled_lift_success_rate": {
+          "count": 735,
+          "first": {
+            "logged_step": 800,
+            "value": 0.0
+          },
+          "latest": {
+            "logged_step": 500000,
+            "value": 0.9599999785423279
+          },
+          "minimum": 0.0,
+          "maximum": 0.9599999785423279,
+          "first_maximum_logged_step": 492332
+        },
+        "rollout/cube_height_above_table": {
+          "count": 753,
+          "first": {
+            "logged_step": 800,
+            "value": 0.02093404531478882
+          },
+          "latest": {
+            "logged_step": 500000,
+            "value": 0.07224571704864502
+          },
+          "minimum": 0.015340805053710938,
+          "maximum": 0.19978773593902588,
+          "first_maximum_logged_step": 140524
+        },
+        "rollout/cube_speed": {
+          "count": 753,
+          "first": {
+            "logged_step": 800,
+            "value": 1.6691395783433906e-14
+          },
+          "latest": {
+            "logged_step": 500000,
+            "value": 0.09751719981431961
+          },
+          "minimum": 1.3631549400817001e-14,
+          "maximum": 0.27232450246810913,
+          "first_maximum_logged_step": 305000
+        },
+        "rollout/cube_xy_drift": {
+          "count": 753,
+          "first": {
+            "logged_step": 800,
+            "value": 0.0
+          },
+          "latest": {
+            "logged_step": 500000,
+            "value": 0.010911618359386921
+          },
+          "minimum": 0.0,
+          "maximum": 0.06974087655544281,
+          "first_maximum_logged_step": 104201
+        },
+        "rollout/eef_speed": {
+          "count": 753,
+          "first": {
+            "logged_step": 800,
+            "value": 0.22820715606212616
+          },
+          "latest": {
+            "logged_step": 500000,
+            "value": 0.09905128180980682
+          },
+          "minimum": 6.035965998307802e-05,
+          "maximum": 0.2953450679779053,
+          "first_maximum_logged_step": 440000
+        },
+        "rollout/ep_len_mean": {
+          "count": 657,
+          "first": {
+            "logged_step": 800,
+            "value": 200.0
+          },
+          "latest": {
+            "logged_step": 499532,
+            "value": 186.36000061035156
+          },
+          "minimum": 170.0500030517578,
+          "maximum": 200.0,
+          "first_maximum_logged_step": 800
+        },
+        "rollout/ep_rew_mean": {
+          "count": 657,
+          "first": {
+            "logged_step": 800,
+            "value": 3.169651508331299
+          },
+          "latest": {
+            "logged_step": 499532,
+            "value": 211.11456298828125
+          },
+          "minimum": 3.169651508331299,
+          "maximum": 215.29078674316406,
+          "first_maximum_logged_step": 422093
+        },
+        "rollout/grasping_cube": {
+          "count": 753,
+          "first": {
+            "logged_step": 800,
+            "value": 0.0
+          },
+          "latest": {
+            "logged_step": 500000,
+            "value": 1.0
+          },
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "first_maximum_logged_step": 22400
+        },
+        "rollout/has_grasped_cube": {
+          "count": 753,
+          "first": {
+            "logged_step": 800,
+            "value": 0.0
+          },
+          "latest": {
+            "logged_step": 500000,
+            "value": 1.0
+          },
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "first_maximum_logged_step": 20000
+        },
+        "rollout/height_progress": {
+          "count": 753,
+          "first": {
+            "logged_step": 800,
+            "value": 0.0
+          },
+          "latest": {
+            "logged_step": 500000,
+            "value": 0.002306222915649414
+          },
+          "minimum": -0.011536717414855957,
+          "maximum": 0.008262693881988525,
+          "first_maximum_logged_step": 490000
+        },
+        "rollout/held_success_rate": {
+          "count": 735,
+          "first": {
+            "logged_step": 800,
+            "value": 0.0
+          },
+          "latest": {
+            "logged_step": 500000,
+            "value": 0.12999999523162842
+          },
+          "minimum": 0.0,
+          "maximum": 0.23999999463558197,
+          "first_maximum_logged_step": 446974
+        },
+        "rollout/hold_reward_delta": {
+          "count": 753,
+          "first": {
+            "logged_step": 800,
+            "value": -0.008019073866307735
+          },
+          "latest": {
+            "logged_step": 500000,
+            "value": 0.31420570611953735
+          },
+          "minimum": -0.5106080174446106,
+          "maximum": 0.6338881850242615,
+          "first_maximum_logged_step": 355000
+        },
+        "rollout/post_grasp_vertical_mode": {
+          "count": 753,
+          "first": {
+            "logged_step": 800,
+            "value": 0.0
+          },
+          "latest": {
+            "logged_step": 500000,
+            "value": 1.0
+          },
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "first_maximum_logged_step": 20000
+        },
+        "rollout/raw_lift_success_rate": {
+          "count": 735,
+          "first": {
+            "logged_step": 800,
+            "value": 0.0
+          },
+          "latest": {
+            "logged_step": 500000,
+            "value": 0.9700000286102295
+          },
+          "minimum": 0.0,
+          "maximum": 0.9700000286102295,
+          "first_maximum_logged_step": 486438
+        },
+        "rollout/stable_lift_steps": {
+          "count": 753,
+          "first": {
+            "logged_step": 800,
+            "value": 0.0
+          },
+          "latest": {
+            "logged_step": 500000,
+            "value": 0.0
+          },
+          "minimum": 0.0,
+          "maximum": 10.0,
+          "first_maximum_logged_step": 91856
+        },
+        "rollout/success_rate": {
+          "count": 657,
+          "first": {
+            "logged_step": 800,
+            "value": 0.0
+          },
+          "latest": {
+            "logged_step": 499532,
+            "value": 0.14000000059604645
+          },
+          "minimum": 0.0,
+          "maximum": 0.23999999463558197,
+          "first_maximum_logged_step": 446974
+        },
+        "rollout/vertical_lift_reward": {
+          "count": 753,
+          "first": {
+            "logged_step": 800,
+            "value": 0.0
+          },
+          "latest": {
+            "logged_step": 500000,
+            "value": 0.0027674674056470394
+          },
+          "minimum": 0.0,
+          "maximum": 0.00991523265838623,
+          "first_maximum_logged_step": 490000
+        },
+        "rollout/xy_action_penalty": {
+          "count": 753,
+          "first": {
+            "logged_step": 800,
+            "value": 0.0
+          },
+          "latest": {
+            "logged_step": 500000,
+            "value": 0.0
+          },
+          "minimum": 0.0,
+          "maximum": 0.0,
+          "first_maximum_logged_step": 800
+        },
+        "rollout/xy_drift_penalty": {
+          "count": 753,
+          "first": {
+            "logged_step": 800,
+            "value": 0.0
+          },
+          "latest": {
+            "logged_step": 500000,
+            "value": 0.021823236718773842
+          },
+          "minimum": 0.0,
+          "maximum": 0.13948175311088562,
+          "first_maximum_logged_step": 104201
+        },
+        "time/fps": {
+          "count": 657,
+          "first": {
+            "logged_step": 800,
+            "value": 182.0
+          },
+          "latest": {
+            "logged_step": 499532,
+            "value": 61.0
+          },
+          "minimum": 58.0,
+          "maximum": 186.0,
+          "first_maximum_logged_step": 1600
+        },
+        "eval/mean_ep_length": {
+          "count": 100,
+          "first": {
+            "logged_step": 5000,
+            "value": 200.0
+          },
+          "latest": {
+            "logged_step": 500000,
+            "value": 59.20000076293945
+          },
+          "minimum": 34.900001525878906,
+          "maximum": 200.0,
+          "first_maximum_logged_step": 5000
+        },
+        "eval/mean_reward": {
+          "count": 100,
+          "first": {
+            "logged_step": 5000,
+            "value": 19.278079986572266
+          },
+          "latest": {
+            "logged_step": 500000,
+            "value": 38.399505615234375
+          },
+          "minimum": 19.278079986572266,
+          "maximum": 192.5689697265625,
+          "first_maximum_logged_step": 215000
+        },
+        "eval/success_rate": {
+          "count": 100,
+          "first": {
+            "logged_step": 5000,
+            "value": 0.0
+          },
+          "latest": {
+            "logged_step": 500000,
+            "value": 0.8999999761581421
+          },
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "first_maximum_logged_step": 395000
+        },
+        "eval/controlled_lift_success_rate": {
+          "count": 99,
+          "first": {
+            "logged_step": 5600,
+            "value": 0.0
+          },
+          "latest": {
+            "logged_step": 495532,
+            "value": 0.6000000238418579
+          },
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "first_maximum_logged_step": 400066
+        },
+        "eval/held_success_rate": {
+          "count": 99,
+          "first": {
+            "logged_step": 5600,
+            "value": 0.0
+          },
+          "latest": {
+            "logged_step": 495532,
+            "value": 0.6000000238418579
+          },
+          "minimum": 0.0,
+          "maximum": 0.949999988079071,
+          "first_maximum_logged_step": 470053
+        },
+        "eval/raw_lift_success_rate": {
+          "count": 99,
+          "first": {
+            "logged_step": 5600,
+            "value": 0.0
+          },
+          "latest": {
+            "logged_step": 495532,
+            "value": 0.75
+          },
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "first_maximum_logged_step": 365446
+        },
+        "train/actor_loss": {
+          "count": 746,
+          "first": {
+            "logged_step": 5600,
+            "value": -10.087510108947754
+          },
+          "latest": {
+            "logged_step": 500000,
+            "value": -107.52227783203125
+          },
+          "minimum": -108.71013641357422,
+          "maximum": -10.087510108947754,
+          "first_maximum_logged_step": 5600
+        },
+        "train/critic_loss": {
+          "count": 746,
+          "first": {
+            "logged_step": 5600,
+            "value": 0.11585110425949097
+          },
+          "latest": {
+            "logged_step": 500000,
+            "value": 0.9347033500671387
+          },
+          "minimum": 0.011774685233831406,
+          "maximum": 95.32613372802734,
+          "first_maximum_logged_step": 416512
+        },
+        "train/ent_coef": {
+          "count": 746,
+          "first": {
+            "logged_step": 5600,
+            "value": 0.9419944882392883
+          },
+          "latest": {
+            "logged_step": 500000,
+            "value": 0.02274581603705883
+          },
+          "minimum": 0.005152673926204443,
+          "maximum": 0.9419944882392883,
+          "first_maximum_logged_step": 5600
+        },
+        "train/ent_coef_loss": {
+          "count": 746,
+          "first": {
+            "logged_step": 5600,
+            "value": -0.3992474377155304
+          },
+          "latest": {
+            "logged_step": 500000,
+            "value": 0.16487762331962585
+          },
+          "minimum": -16.313796997070312,
+          "maximum": 4.024747848510742,
+          "first_maximum_logged_step": 464487
+        },
+        "train/learning_rate": {
+          "count": 746,
+          "first": {
+            "logged_step": 5600,
+            "value": 9.999999747378752e-05
+          },
+          "latest": {
+            "logged_step": 500000,
+            "value": 9.999999747378752e-05
+          },
+          "minimum": 9.999999747378752e-05,
+          "maximum": 9.999999747378752e-05,
+          "first_maximum_logged_step": 5600
+        }
+      },
+      "npz_comparisons": {
+        "eval/mean_ep_length": {
+          "matches_npz_checkpoints_and_values": true,
+          "comparison_tolerance": "rtol=1e-6, atol=1e-6 (TensorBoard stores float32 scalars)"
+        },
+        "eval/mean_reward": {
+          "matches_npz_checkpoints_and_values": true,
+          "comparison_tolerance": "rtol=1e-6, atol=1e-6 (TensorBoard stores float32 scalars)"
+        },
+        "eval/success_rate": {
+          "matches_npz_checkpoints_and_values": true,
+          "comparison_tolerance": "rtol=1e-6, atol=1e-6 (TensorBoard stores float32 scalars)"
+        }
+      }
+    },
+    {
+      "file": "train_sim/fr3v2_baseframe_lift_h0075_vertical/tb/SAC_2/events.out.tfevents.1778622290.liu-B660M-GAMING-AC-DDR4.528767.0",
+      "sha256": "b4328e5bf6c38d8db5af48ccbef74f5937d4ce418af5ae13d7e26c172505a0c8",
+      "run_directory": "SAC_2",
+      "scalar_tag_count": 0,
+      "scalar_tags": {},
+      "npz_comparisons": {}
+    },
+    {
+      "file": "train_sim/fr3v2_baseframe_lift_h0075_vertical/tb/SAC_3/events.out.tfevents.1778622323.liu-B660M-GAMING-AC-DDR4.530520.0",
+      "sha256": "d8d61dc27944b103bd9d6bd38e69f7c114258641b949ab2d000e936cba8508cd",
+      "run_directory": "SAC_3",
+      "scalar_tag_count": 20,
+      "scalar_tags": {
+        "rollout/controlled_lift_success_rate": {
+          "count": 1,
+          "first": {
+            "logged_step": 800,
+            "value": 0.0
+          },
+          "latest": {
+            "logged_step": 800,
+            "value": 0.0
+          },
+          "minimum": 0.0,
+          "maximum": 0.0,
+          "first_maximum_logged_step": 800
+        },
+        "rollout/cube_height_above_table": {
+          "count": 1,
+          "first": {
+            "logged_step": 800,
+            "value": 0.02044910192489624
+          },
+          "latest": {
+            "logged_step": 800,
+            "value": 0.02044910192489624
+          },
+          "minimum": 0.02044910192489624,
+          "maximum": 0.02044910192489624,
+          "first_maximum_logged_step": 800
+        },
+        "rollout/cube_speed": {
+          "count": 1,
+          "first": {
+            "logged_step": 800,
+            "value": 1.625547366526127e-14
+          },
+          "latest": {
+            "logged_step": 800,
+            "value": 1.625547366526127e-14
+          },
+          "minimum": 1.625547366526127e-14,
+          "maximum": 1.625547366526127e-14,
+          "first_maximum_logged_step": 800
+        },
+        "rollout/cube_xy_drift": {
+          "count": 1,
+          "first": {
+            "logged_step": 800,
+            "value": 0.0
+          },
+          "latest": {
+            "logged_step": 800,
+            "value": 0.0
+          },
+          "minimum": 0.0,
+          "maximum": 0.0,
+          "first_maximum_logged_step": 800
+        },
+        "rollout/eef_speed": {
+          "count": 1,
+          "first": {
+            "logged_step": 800,
+            "value": 0.13542848825454712
+          },
+          "latest": {
+            "logged_step": 800,
+            "value": 0.13542848825454712
+          },
+          "minimum": 0.13542848825454712,
+          "maximum": 0.13542848825454712,
+          "first_maximum_logged_step": 800
+        },
+        "rollout/ep_len_mean": {
+          "count": 1,
+          "first": {
+            "logged_step": 800,
+            "value": 200.0
+          },
+          "latest": {
+            "logged_step": 800,
+            "value": 200.0
+          },
+          "minimum": 200.0,
+          "maximum": 200.0,
+          "first_maximum_logged_step": 800
+        },
+        "rollout/ep_rew_mean": {
+          "count": 1,
+          "first": {
+            "logged_step": 800,
+            "value": 4.731473445892334
+          },
+          "latest": {
+            "logged_step": 800,
+            "value": 4.731473445892334
+          },
+          "minimum": 4.731473445892334,
+          "maximum": 4.731473445892334,
+          "first_maximum_logged_step": 800
+        },
+        "rollout/grasping_cube": {
+          "count": 1,
+          "first": {
+            "logged_step": 800,
+            "value": 0.0
+          },
+          "latest": {
+            "logged_step": 800,
+            "value": 0.0
+          },
+          "minimum": 0.0,
+          "maximum": 0.0,
+          "first_maximum_logged_step": 800
+        },
+        "rollout/has_grasped_cube": {
+          "count": 1,
+          "first": {
+            "logged_step": 800,
+            "value": 0.0
+          },
+          "latest": {
+            "logged_step": 800,
+            "value": 0.0
+          },
+          "minimum": 0.0,
+          "maximum": 0.0,
+          "first_maximum_logged_step": 800
+        },
+        "rollout/height_progress": {
+          "count": 1,
+          "first": {
+            "logged_step": 800,
+            "value": 0.0
+          },
+          "latest": {
+            "logged_step": 800,
+            "value": 0.0
+          },
+          "minimum": 0.0,
+          "maximum": 0.0,
+          "first_maximum_logged_step": 800
+        },
+        "rollout/held_success_rate": {
+          "count": 1,
+          "first": {
+            "logged_step": 800,
+            "value": 0.0
+          },
+          "latest": {
+            "logged_step": 800,
+            "value": 0.0
+          },
+          "minimum": 0.0,
+          "maximum": 0.0,
+          "first_maximum_logged_step": 800
+        },
+        "rollout/hold_reward_delta": {
+          "count": 1,
+          "first": {
+            "logged_step": 800,
+            "value": -0.009270931594073772
+          },
+          "latest": {
+            "logged_step": 800,
+            "value": -0.009270931594073772
+          },
+          "minimum": -0.009270931594073772,
+          "maximum": -0.009270931594073772,
+          "first_maximum_logged_step": 800
+        },
+        "rollout/post_grasp_vertical_mode": {
+          "count": 1,
+          "first": {
+            "logged_step": 800,
+            "value": 0.0
+          },
+          "latest": {
+            "logged_step": 800,
+            "value": 0.0
+          },
+          "minimum": 0.0,
+          "maximum": 0.0,
+          "first_maximum_logged_step": 800
+        },
+        "rollout/raw_lift_success_rate": {
+          "count": 1,
+          "first": {
+            "logged_step": 800,
+            "value": 0.0
+          },
+          "latest": {
+            "logged_step": 800,
+            "value": 0.0
+          },
+          "minimum": 0.0,
+          "maximum": 0.0,
+          "first_maximum_logged_step": 800
+        },
+        "rollout/stable_lift_steps": {
+          "count": 1,
+          "first": {
+            "logged_step": 800,
+            "value": 0.0
+          },
+          "latest": {
+            "logged_step": 800,
+            "value": 0.0
+          },
+          "minimum": 0.0,
+          "maximum": 0.0,
+          "first_maximum_logged_step": 800
+        },
+        "rollout/success_rate": {
+          "count": 1,
+          "first": {
+            "logged_step": 800,
+            "value": 0.0
+          },
+          "latest": {
+            "logged_step": 800,
+            "value": 0.0
+          },
+          "minimum": 0.0,
+          "maximum": 0.0,
+          "first_maximum_logged_step": 800
+        },
+        "rollout/vertical_lift_reward": {
+          "count": 1,
+          "first": {
+            "logged_step": 800,
+            "value": 0.0
+          },
+          "latest": {
+            "logged_step": 800,
+            "value": 0.0
+          },
+          "minimum": 0.0,
+          "maximum": 0.0,
+          "first_maximum_logged_step": 800
+        },
+        "rollout/xy_action_penalty": {
+          "count": 1,
+          "first": {
+            "logged_step": 800,
+            "value": 0.0
+          },
+          "latest": {
+            "logged_step": 800,
+            "value": 0.0
+          },
+          "minimum": 0.0,
+          "maximum": 0.0,
+          "first_maximum_logged_step": 800
+        },
+        "rollout/xy_drift_penalty": {
+          "count": 1,
+          "first": {
+            "logged_step": 800,
+            "value": 0.0
+          },
+          "latest": {
+            "logged_step": 800,
+            "value": 0.0
+          },
+          "minimum": 0.0,
+          "maximum": 0.0,
+          "first_maximum_logged_step": 800
+        },
+        "time/fps": {
+          "count": 1,
+          "first": {
+            "logged_step": 800,
+            "value": 183.0
+          },
+          "latest": {
+            "logged_step": 800,
+            "value": 183.0
+          },
+          "minimum": 183.0,
+          "maximum": 183.0,
+          "first_maximum_logged_step": 800
+        }
+      },
+      "npz_comparisons": {}
+    }
+  ],
+  "custom_success_batch_episodes_in_supplied_code": 20,
+  "standard_evaluation_batch_episodes_in_supplied_code": 10,
+  "interpretation": [
+    "Event files are summarized independently; SAC folders are not pooled as training seeds.",
+    "Standard eval/success_rate corresponds to the 10-episode NPZ successes batch.",
+    "Custom eval/{held,controlled_lift,raw_lift}_success_rate tags come from separate 20-episode batches.",
+    "Custom metrics are recorded after the standard evaluation logger dump and can appear at later logged steps.",
+    "Latest custom success scalars therefore do not establish the final checkpoint's performance.",
+    "Maximum values identify observed batches, not uncertainty bounds or independent benchmark results."
+  ]
+}

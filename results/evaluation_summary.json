@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "source_file": "train_sim/fr3v2_baseframe_lift_h0075_vertical/eval_logs/evaluations.npz",
+  "source_sha256": "ccacaaa7af707c67822c68a12c2c4d0b3af53d38baef8e166bb5f3e3332543cc",
+  "array_shapes": {
+    "ep_lengths": [
+      100,
+      10
+    ],
+    "results": [
+      100,
+      10
+    ],
+    "timesteps": [
+      100
+    ],
+    "successes": [
+      100,
+      10
+    ]
+  },
+  "evaluation_checkpoints": 100,
+  "episodes_per_checkpoint": 10,
+  "total_logged_evaluation_episodes": 1000,
+  "total_logged_evaluation_environment_steps": 144313,
+  "first_training_timestep": 5000,
+  "last_training_timestep": 500000,
+  "checkpoint_intervals": [
+    5000
+  ],
+  "standard_deviation": "Population standard deviation over each evaluation batch (ddof=0)",
+  "success_semantics": "Archive successes are the environment's is_success flag. In the supplied training code, this is held_success: 10 consecutive controlled-lift steps. They are not raw-lift outcomes.",
+  "first_evaluation": {
+    "training_timesteps": 5000,
+    "evaluation_episodes": 10,
+    "mean_reward": 19.2780801,
+    "std_reward": 8.98141648105151,
+    "min_reward": 9.586154,
+    "max_reward": 38.594965,
+    "mean_episode_length": 200.0,
+    "std_episode_length": 0.0,
+    "min_episode_length": 200,
+    "max_episode_length": 200,
+    "success_count": 0,
+    "success_rate": 0.0
+  },
+  "final_recorded_evaluation": {
+    "training_timesteps": 500000,
+    "evaluation_episodes": 10,
+    "mean_reward": 38.3995073,
+    "std_reward": 19.315770890779437,
+    "min_reward": 21.809204,
+    "max_reward": 92.772982,
+    "mean_episode_length": 59.2,
+    "std_episode_length": 49.853385040536615,
+    "min_episode_length": 29,
+    "max_episode_length": 200,
+    "success_count": 9,
+    "success_rate": 0.9
+  },
+  "highest_success_rate": 1.0,
+  "highest_success_rate_timesteps": [
+    395000,
+    405000,
+    435000,
+    445000,
+    465000,
+    490000,
+    495000
+  ],
+  "saved_models": [
+    {
+      "num_timesteps": 500000,
+      "seed": null,
+      "learning_rate": 0.0001,
+      "buffer_size": 200000,
+      "batch_size": 256,
+      "learning_starts": 5000,
+      "tau": 0.005,
+      "gamma": 0.99,
+      "file": "train_sim/fr3v2_baseframe_lift_h0075_vertical/final_model/sac_panda_lift_final.zip",
+      "sha256": "079c953d14ebc6fe0c8802966c358e1b406ecf895bc8c64d94b16aa9a7b9f5bd",
+      "matching_logged_evaluation": {
+        "training_timesteps": 500000,
+        "evaluation_episodes": 10,
+        "mean_reward": 38.3995073,
+        "std_reward": 19.315770890779437,
+        "min_reward": 21.809204,
+        "max_reward": 92.772982,
+        "mean_episode_length": 59.2,
+        "std_episode_length": 49.853385040536615,
+        "min_episode_length": 29,
+        "max_episode_length": 200,
+        "success_count": 9,
+        "success_rate": 0.9
+      },
+      "evaluation_relation": "The matching logged training step is provenance only, not an exact evaluation of this saved final ZIP. In the supplied Stable-Baselines3 2.7.1 training flow, the last scheduled EvalCallback occurs before the final gradient update; the final ZIP is saved after learn returns. The separate post-training evaluate_policy console result was not supplied."
+    }
+  ],
+  "limitations": [
+    "These are stored evaluation batches from one run, not newly executed experiments.",
+    "Each checkpoint uses a small episode batch; no multi-seed estimate is available.",
+    "A matching logged evaluation is not a fresh model re-evaluation; consult each saved model's evaluation_relation.",
+    "The 500,000-step scheduled training evaluation precedes the final gradient update in Stable-Baselines3 2.7.1; it does not evaluate the exact weights saved after learn returns.",
+    "The training script separately evaluates the saved final policy after training, but its console output was not supplied in this repository's evidence.",
+    "The separately logged TensorBoard custom success metrics use additional 20-episode batches.",
+    "This archive does not contain raw-lift or controlled-lift outcome arrays.",
+    "Real-robot success rates cannot be computed from the provided demonstrations."
+  ]
+}
